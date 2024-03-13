@@ -28,8 +28,8 @@
           <li><a href="#service">Service</a></li>
           <li><a href="#offer">Offer</a></li>
           <li><a href="#client">Client</a></li>
-          <li><a href="#client">Sign-Up</a></li>
-          <li><a href="#client">Sign-In</a></li>
+          <li><a href="/auth.html">Sign-Up</a></li>
+          <li><a href="/auth.html">Sign-In</a></li>
           <!-- <li><button class="btn"><a href="SignUp-SignIn.html">Sign Up</a></button></li>
           <li><button class="btn"><a href="SignUp-SignIn.html">Sign Up</a></button></li> -->
         </ul>
@@ -48,24 +48,36 @@
           </div>
           <form action="/" class="booking__form">
             <div class="booking__input">
-              <label for="arrival">To</label>
-              <select id="arrival" name="arrival">
-                  <option value="New York">New York</option>
-                  <option value="Los Angeles">Los Angeles</option>
-                  <option value="Chicago">Chicago</option>
-                  <option value="Houston">Houston</option>
-                  <option value="Miami">Miami</option>
+              <label for="departure">From</label>
+              <select id="departure" name="departure">
+                <option value="Sunyani">Sunyani</option>
+                  <option value="Accra">Accra</option>
+                  <option value="Kumasi">Kumasi</option>
+                  <option value="Cape Coast">Moscow</option>
+                  <option value="Cape Coast">USA</option>
+                  <option value="Takoradi">Takoradi</option>
+                  <option value="Cape Coast">Cape Coast</option>
                   <!-- Add more cities as needed -->
               </select>
           </div>
           
-            <div class="booking__input">
-              <label for="departure">From</label>
-              <input type="text" placeholder="Departure" />
-            </div>
+          <div class="booking__input">
+            <label for="arrival">To</label>
+            <select id="arrival" name="arrival">
+              <option value="Accra">Accra</option>
+              <option value="Sunyani">Sunyani</option>
+              <option value="Kumasi">Kumasi</option>
+              <option value="Takoradi">Takoradi</option>
+              <option value="Cape Coast">Cape Coast</option>
+              <option value="Cape Coast">Moscow</option>
+              <option value="Cape Coast">USA</option>
+
+                <!-- Add more cities as needed -->
+            </select>
+        </div>        
             <div class="booking__input">
               <label for="date">Date</label>
-              <input type="text" placeholder="Date" />
+              <input type="date" placeholder="Date" />
             </div>
           </form>
           <div class="booking__btn">
@@ -112,7 +124,9 @@
               </p>
             </div>
             <div class="service__btn">
-              <button class="btn">See All</button>
+              <a href="#">
+                <button class="btn">See All</button>
+              </a>            
             </div>
           </div>
         </div>
@@ -127,7 +141,9 @@
               </p>
             </div>
             <div class="service__btn">
-              <button class="btn">See All</button>
+              <a href="#">
+                <button class="btn">See All</button>
+              </a>
             </div>
           </div>
         </div>
@@ -142,7 +158,9 @@
               </p>
             </div>
             <div class="service__btn">
-              <button class="btn">See All</button>
+              <a href="#">
+                <button class="btn">See All</button>
+              </a>
             </div>
           </div>
         </div>
@@ -157,28 +175,28 @@
       <div class="offer__grid">
         <div class="offer__card">
           <img src="assets/offer-1.jpg" alt="offer" />
-          <h4>Dhaka To USA</h4>
-          <p>15 Sep 2023</p>
+          <h4>Ghana To USA</h4>
+          <p>15 April 2024</p>
           <div>
-            <span>$870.00</span>
+            <span>Ghs110,000.00</span>
             <button class="btn">Book Now</button>
           </div>
         </div>
         <div class="offer__card">
           <img src="assets/offer-2.jpg" alt="offer" />
-          <h4>Dhaka To Dubai</h4>
+          <h4>Sunyani To Accra</h4>
           <p>20 Sep 2023</p>
           <div>
-            <span>$570.00</span>
+            <span>Ghs1800.00</span>
             <button class="btn">Book Now</button>
           </div>
         </div>
         <div class="offer__card">
           <img src="assets/offer-3.jpg" alt="offer" />
-          <h4>Dhaka To Maldives</h4>
-          <p>20 Sep 2023</p>
+          <h4>Accra To Moscow</h4>
+          <p>3 August 2024</p>
           <div>
-            <span>$370.00</span>
+            <span>Ghs200,000.00</span>
             <button class="btn">Book Now</button>
           </div>
         </div>
