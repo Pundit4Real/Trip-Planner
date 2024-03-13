@@ -28,6 +28,8 @@
           <li><a href="#service">Service</a></li>
           <li><a href="#offer">Offer</a></li>
           <li><a href="#client">Client</a></li>
+          <li><a href="#client">Sign-Up</a></li>
+          <li><a href="#client">Sign-In</a></li>
           <!-- <li><button class="btn"><a href="SignUp-SignIn.html">Sign Up</a></button></li>
           <li><button class="btn"><a href="SignUp-SignIn.html">Sign Up</a></button></li> -->
         </ul>
@@ -47,8 +49,16 @@
           <form action="/" class="booking__form">
             <div class="booking__input">
               <label for="arrival">To</label>
-              <input type="text" placeholder="Arrival" />
-            </div>
+              <select id="arrival" name="arrival">
+                  <option value="New York">New York</option>
+                  <option value="Los Angeles">Los Angeles</option>
+                  <option value="Chicago">Chicago</option>
+                  <option value="Houston">Houston</option>
+                  <option value="Miami">Miami</option>
+                  <!-- Add more cities as needed -->
+              </select>
+          </div>
+          
             <div class="booking__input">
               <label for="departure">From</label>
               <input type="text" placeholder="Departure" />
