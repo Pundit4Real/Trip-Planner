@@ -34,6 +34,7 @@
   color: var(--text-light);
 }
 
+  
 .btn {
   padding: 0.75rem 2rem;
   font-size: 1rem;
@@ -213,6 +214,7 @@ nav.scrolled {
 .booking__input {
   display: grid;
   gap: 5px;
+  height: 100px;
 }
 
 .booking__input label {
