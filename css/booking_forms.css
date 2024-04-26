@@ -12,6 +12,7 @@ body {
     height: 100vh;
 }
 .booking__form {
+    margin-top: 50px;
     max-width: 600px;
     padding: 30px;
     border-radius: 8px;
@@ -50,4 +51,21 @@ body {
 }
 .btn:hover {
     background-color: #0056b3;
+}
+
+@media screen and (min-width: 768px) {
+    .booking__input {
+        width: 48%;
+        display: inline-block;
+        margin-right: 2%;
+    }
+    
+    .booking__input:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+.arrival-time-input {
+    width: 120px;
+    margin-left: 20px; 
 }

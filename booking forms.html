@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/booking_forms.css">
-   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.ico">
-
-    <title>AM-Travels | Booking-Form </title>
+    <title>AM-Travels | Booking Form</title>
+    <link rel="stylesheet" href="css/booking_forms.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.ico">
 
 </head>
 <body>
-    <form action="/auth.html" class="booking__form">
+    <form action="/auth.html" class="booking__form" id="bookingForm">
         <div class="booking__input">
-            <label for="departure">Departure City</label>
+            <label for="departure">Depart-City</label>
             <select id="departure" name="departure" required>
+                <option value="" disabled selected>Select Departure City</option>
                 <option value="Sunyani">Sunyani</option>
                 <option value="Accra">Accra</option>
                 <option value="Kumasi">Kumasi</option>
-                <option value="Cape Coast">Moscow</option>
-                <option value="Cape Coast">USA</option>
                 <option value="Takoradi">Takoradi</option>
                 <option value="Cape Coast">Cape Coast</option>
                 <!-- Add more cities as needed -->
@@ -27,35 +25,50 @@
         <div class="booking__input">
             <label for="arrival">Arrival City</label>
             <select id="arrival" name="arrival" required>
+                <option value="" disabled selected>Select Arrival City</option>
                 <option value="Accra">Accra</option>
                 <option value="Sunyani">Sunyani</option>
                 <option value="Kumasi">Kumasi</option>
                 <option value="Takoradi">Takoradi</option>
                 <option value="Cape Coast">Cape Coast</option>
-                <option value="Cape Coast">Moscow</option>
-                <option value="Cape Coast">USA</option>
                 <!-- Add more cities as needed -->
             </select>
         </div> 
         <div class="booking__input">
-            <label for="departure_time">Departure Time</label>
-            <input type="time" id="departure_time" name="departure_time" required>
+            <label for="depart_time">Depart-Time</label>
+            <select id="depart_time" name="depart_time" required>
+                <option value="" disabled selected>Select Departure Time</option>
+                <option value="08:00">8:00 AM</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="15:00">3:00 PM</option>
+                <option value="18:00">6:00 PM</option>
+                <!-- Add more departure times as needed -->
+            </select>
         </div>
         <div class="booking__input">
             <label for="arrival_time">Arrival Time</label>
-            <input type="time" id="arrival_time" name="arrival_time" required>
+            <input type="text" id="arrival_time" name="arrival_time" class="arrival-time-input" disabled>
         </div>
-        <div class="booking__input">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <div id="passengerDetails">
+            <div class="passenger">
+                <h3>Passenger 1</h3>
+                <div class="booking__input">
+                    <label for="name">Name</label>
+                    <input type="text" class="passenger_name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="booking__input">
+                    <label for="telephone">Telephone</label>
+                    <input type="tel" class="passenger_telephone" name="telephone" placeholder="Your Telephone" required>
+                </div>
+            </div>
         </div>
-        <div class="booking__input">
-            <label for="telephone">Telephone</label>
-            <input type="tel" id="telephone" name="telephone" placeholder="Your Telephone" required>
+        <div>
+            <button class="btn btn-sucess" type="button" id="addPassengerBtn">Add Passenger</button>
         </div>
         <div class="booking__input">
             <label for="travel_class">Travel Class</label>
             <select id="travel_class" name="travel_class" required>
+                <option value="" disabled selected>Select Travel Class</option>
                 <option value="economy">Economy</option>
                 <option value="business">Business</option>
                 <option value="first">First Class</option>
@@ -64,23 +77,23 @@
         <div class="booking__input">
             <label for="choose_way">Choose Your Way</label>
             <div>
-                <input type="radio" id="one_way" name="choose_way" value="one_way">
+                <input type="radio" id="one_way" name="choose_way" value="one_way" required>
                 <label for="one_way">One Way</label>
             </div>
             <div>
-                <input type="radio" id="round_trip" name="choose_way" value="round_trip">
+                <input type="radio" id="round_trip" name="choose_way" value="round_trip" required>
                 <label for="round_trip">Round Trip</label>
             </div>
             <div>
-                <input type="radio" id="multi_city" name="choose_way" value="multi_city">
+                <input type="radio" id="multi_city" name="choose_way" value="multi_city" required>
                 <label for="multi_city">Multi City</label>
             </div>
         </div>
         <div class="booking__btn">
-            <a href="/auth.html">
-                <button type="submit" class="btn">Book Now</button>
-            </a>
+            <button type="submit" class="btn">Book Now</button>
         </div>
     </form>
+
+    <script src="js/forms.js"></script>
 </body>
 </html>
