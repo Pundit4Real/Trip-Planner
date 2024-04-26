@@ -65,18 +65,32 @@
         <div class="right">
             <p>Order information</p>
             <hr style="border:1px solid #ccc; margin: 0 15px;">
+
             <div class="details">
                 <div style="font-weight: bold; padding: 3px 0;">Order description</div>
                 <div style="padding: 3px 0;">
-                    <textarea name="od" id="" cols="25" rows="5"></textarea>
+                    <p>Departure City: <span id="departureCity"></span></p>
+                    <p>Arrival City: <span id="arrivalCity"></span></p>
+                    <p>Departure Time: <span id="departureTime"></span></p>
+                    <p>Arrival Time: <span id="arrivalTime"></span></p>
+                    <!-- Add other booking details here -->
                 </div>
             </div>
+
+
             <hr style="border:1px solid #ccc; margin: 0 15px;">
-            <a href="https://www.shift4shop.com/credit-card-logos.html"><img alt="Credit Card Logos" title="Credit Card Logos" src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png" width="100%" height="auto" /></a>
+            <a href="https://www.shift4shop.com/credit-card-logos.html">
+                <img alt="Credit Card Logos" title="Credit Card Logos" src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png" width="100%" height="auto" />
+            </a>
         </div>
+        
         
     </div>
 
     <script src="card.js"></script>
+    <script>
+        const bookings = localStorage.getItem('bookingDetails', JSON.stringify(bookingDetails));
+        console.log(bookings)
+    </script>
 </body>
 </html>

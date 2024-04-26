@@ -84,7 +84,7 @@ body {
       rgba(17, 43, 90, 0.7),
       rgba(17, 43, 90, 0.7)
     ),
-    url("assets/header.jpg");
+    url("assets/img2.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -149,7 +149,7 @@ nav.scrolled {
   color: var(--primary-color-dark);
 }
 
-.header__container {
+.header__container{
   max-width: 900px;
 }
 

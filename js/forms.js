@@ -57,3 +57,34 @@ document.getElementById('addPassengerBtn').addEventListener('click', function() 
     `;
     passengerDetails.appendChild(newPassenger);
 });
+
+// Function to save booking details to local storage
+document.getElementById('bookingForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // function saveBookingDetails() {
+        const departureCity = document.getElementById('departure').value;
+        const arrivalCity = document.getElementById('arrival').value;
+        const departureTime = document.getElementById('depart_time').value;
+        const arrivalTime = document.getElementById('arrival_time').value;
+    
+        // Construct the booking object
+        const bookingDetails = {
+            departureCity: departureCity,
+            arrivalCity: arrivalCity,
+            departureTime: departureTime,
+            arrivalTime: arrivalTime,
+            // Add other booking details here
+        };
+    
+        
+        // Save booking details to local storage
+        localStorage.setItem('bookingDetails', JSON.stringify(bookingDetails));
+        
+        window.location.href = 'payment-page/card.html';
+    // }
+
+})
+
+// Call the function to save booking details
+calculateArrivalTime();
+// saveBookingDetails();

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AM-Travels | Booking Form</title>
+    <link rel="stylesheet" href="css/booking_forms.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.ico">
+
+</head>
+<body>
+    <form action="" class="booking__form" id="bookingForm">
+        <div class="booking__input">
+            <label for="departure">City or Town</label>
+            <select id="departure" name="departure" required>
+                <option value="" disabled selected>Select City or Town</option>
+                <option value="Sunyani">Sunyani</option>
+                <option value="Accra">Accra</option>
+                <option value="Kumasi">Kumasi</option>
+                <option value="Takoradi">Takoradi</option>
+                <option value="Cape Coast">Cape Coast</option>
+                <!-- Add more cities as needed -->
+            </select>
+        </div> 
+        <div id="passengerDetails">
+            <div class="passenger">
+                <h3> Customer</h3>
+                <div class="booking__input">
+                    <label for="name">Name</label>
+                    <input type="text" class="passenger_name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="booking__input">
+                    <label for="telephone">Telephone</label>
+                    <input type="tel" class="passenger_telephone" name="telephone" placeholder="Your Telephone" required>
+                </div>
+            </div>
+        </div>
+        <div class="booking__btn">
+            <button type="submit" class="btn">Book Now</button>
+        </div>
+    </form>
+
+    <script src="js/form2.js"></script>
+</body>
+</html>

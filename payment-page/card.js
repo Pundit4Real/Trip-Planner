@@ -87,3 +87,15 @@ cvv.addEventListener('keyup', function(e){
   cvvBox.style.border="1px solid greenyellow";
  }
 })
+
+// Retrieve booking details from local storage
+const bookingDetails = JSON.parse(localStorage.getItem('bookingDetails'));
+
+// Update HTML elements with booking details
+if (bookingDetails) {
+    document.getElementById('departureCity').textContent = bookingDetails.departureCity;
+    document.getElementById('arrivalCity').textContent = bookingDetails.arrivalCity;
+    document.getElementById('departureTime').textContent = bookingDetails.departureTime;
+    document.getElementById('arrivalTime').textContent = bookingDetails.arrivalTime;
+    // Update other HTML elements with relevant booking details
+}
